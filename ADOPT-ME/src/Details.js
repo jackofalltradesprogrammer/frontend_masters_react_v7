@@ -2,11 +2,8 @@ import { Component } from "react";
 import { useParams } from "react-router-dom";
 
 class Details extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { loading: true };
-  }
+  // using babel - rid of constructor
+  state = { loading: true };
 
   async componentDidMount() {
     const res = await fetch(
